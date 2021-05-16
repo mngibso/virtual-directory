@@ -1,0 +1,24 @@
+{
+  "name": "ep",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc mocha -r ts-node/register test/**/**.ts",
+    "start-debug": "LOCAL=true concurrently \"tsc -w\" \" nodemon --inspect ./dist/index.js ./input.txt\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/mocha": "^8.2.2",
+    "@types/node": "^15.3.0",
+    "chai": "^4.3.4",
+    "mocha": "^8.4.0",
+    "nyc": "^15.1.0",
+    "sinon": "^10.0.0",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4"
+  },
+  "dependencies": {}
+}
